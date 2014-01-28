@@ -67,7 +67,7 @@
       <file leaf-file-name="Database.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="103" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
+            <state line="24" column="27" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
               <folding />
             </state>
           </provider>
@@ -76,16 +76,16 @@
       <file leaf-file-name="application.conf" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="216">
+            <state line="7" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="234">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Config.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="Config.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Config.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="56" selection-start="159" selection-end="159" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="600">
+            <state line="11" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
@@ -94,17 +94,19 @@
       <file leaf-file-name="Core.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Core.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="306">
+            <state line="8" column="0" selection-start="132" selection-end="132" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootService.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="RootService.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="45" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="486">
-              <folding />
+            <state line="17" column="52" selection-start="509" selection-end="509" vertical-scroll-proportion="0.36" vertical-offset="90" max-vertical-offset="756">
+              <folding>
+                <element signature="e#31#50#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -112,7 +114,7 @@
       <file leaf-file-name="Pile.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/Pile.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="77" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="216" max-vertical-offset="378">
+            <state line="12" column="77" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
               <folding />
             </state>
           </provider>
@@ -154,13 +156,13 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/Pile.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/webcore/RootService.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/Keygen.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala" />
         <option value="$PROJECT_DIR$/application.conf" />
         <option value="$PROJECT_DIR$/src/main/application.conf" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Core.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Config.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala" />
         <option value="$PROJECT_DIR$/src/main/resources/application.conf" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala" />
       </list>
     </option>
   </component>
@@ -582,7 +584,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="45" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="288" max-vertical-offset="486">
-          <folding />
+          <folding>
+            <element signature="e#31#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -601,7 +605,9 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="23" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="144" max-vertical-offset="342">
-          <folding />
+          <folding>
+            <element signature="e#31#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -617,23 +623,18 @@
         <state line="23" column="1" selection-start="677" selection-end="677" vertical-scroll-proportion="0.69" vertical-offset="0" max-vertical-offset="600" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/Pile.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="77" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="45" selection-start="581" selection-end="581" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="486">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/Keygen.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="3" selection-start="161" selection-end="161" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="600" />
+        <state line="8" column="3" selection-start="161" selection-end="161" vertical-scroll-proportion="0.24" vertical-offset="0" max-vertical-offset="600">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Config.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="215" selection-end="215" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Core.scala">
@@ -643,24 +644,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="103" selection-start="287" selection-end="287" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="378">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="4" selection-start="4" selection-end="4" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575">
+        <state line="7" column="1" selection-start="194" selection-end="194" vertical-scroll-proportion="-5.04" vertical-offset="0" max-vertical-offset="234">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/Config.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="56" selection-start="159" selection-end="159" vertical-scroll-proportion="0.18" vertical-offset="0" max-vertical-offset="600">
+        <state line="24" column="27" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="630">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/Pile.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="77" selection-start="300" selection-end="300" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="378">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="52" selection-start="509" selection-end="509" vertical-scroll-proportion="0.36" vertical-offset="90" max-vertical-offset="756">
+          <folding>
+            <element signature="e#31#50#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
