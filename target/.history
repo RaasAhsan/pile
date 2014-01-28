@@ -1,0 +1,14 @@
+run
+~compile
+run
+compile
+run
+gen-idea
+~compile
+run
+compile
+run
+compile
+run
+compile
+run
