@@ -2,14 +2,30 @@
 [0m[[0mdebug[0m] [0mInitial source changes: [0m
 [0m[[0mdebug[0m] [0m	removed:Set()[0m
 [0m[[0mdebug[0m] [0m	added: Set()[0m
-[0m[[0mdebug[0m] [0m	modified: Set()[0m
+[0m[[0mdebug[0m] [0m	modified: Set(/home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/core/Config.scala, /home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/db/Database.scala)[0m
 [0m[[0mdebug[0m] [0mRemoved products: Set()[0m
 [0m[[0mdebug[0m] [0mModified external sources: Set()[0m
 [0m[[0mdebug[0m] [0mModified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mInitial directly invalidated sources: Set(/home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/core/Config.scala, /home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/db/Database.scala)[0m
 [0m[[0mdebug[0m] [0m[0m
 [0m[[0mdebug[0m] [0mSources indirectly invalidated by:[0m
 [0m[[0mdebug[0m] [0m	product: Set()[0m
 [0m[[0mdebug[0m] [0m	binary dep: Set()[0m
 [0m[[0mdebug[0m] [0m	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/core/Config.scala, /home/agro/Desktop/Gramplr/Pile/src/main/scala/com/gramplr/pile/db/Database.scala)[0m
+[0m[[0minfo[0m] [0mCompiling 2 Scala sources to /home/agro/Desktop/Gramplr/Pile/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.2[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.10.2[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 34300fd6, interfacing (CompilerInterface) with Scala compiler version 2.10.2[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/netx.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/plugin.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/rhino.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-7-openjdk-amd64/jre/classes:/home/agro/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.10.2.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/agro/Desktop/Gramplr/Pile/target/scala-2.10/classes:/home/agro/.ivy2/cache/io.spray/spray-can/bundles/spray-can-1.2.0.jar:/home/agro/.ivy2/cache/io.spray/spray-io/bundles/spray-io-1.2.0.jar:/home/agro/.ivy2/cache/io.spray/spray-util/bundles/spray-util-1.2.0.jar:/home/agro/.ivy2/cache/io.spray/spray-http/bundles/spray-http-1.2.0.jar:/home/agro/.ivy2/cache/org.parboiled/parboiled-scala_2.10/bundles/parboiled-scala_2.10-1.1.6.jar:/home/agro/.ivy2/cache/org.parboiled/parboiled-core/bundles/parboiled-core-1.1.6.jar:/home/agro/.ivy2/cache/io.spray/spray-routing/bundles/spray-routing-1.2.0.jar:/home/agro/.ivy2/cache/io.spray/spray-httpx/bundles/spray-httpx-1.2.0.jar:/home/agro/.ivy2/cache/org.jvnet.mimepull/mimepull/jars/mimepull-1.9.3.jar:/home/agro/.ivy2/cache/com.chuusai/shapeless_2.10/jars/shapeless_2.10-1.2.4.jar:/home/agro/.ivy2/cache/com.typesafe.akka/akka-actor_2.10/jars/akka-actor_2.10-2.2.3.jar:/home/agro/.ivy2/cache/com.typesafe/config/bundles/config-1.0.2.jar:/home/agro/.ivy2/cache/com.typesafe.akka/akka-slf4j_2.10/bundles/akka-slf4j_2.10-2.2.3.jar:/home/agro/.ivy2/cache/com.typesafe.slick/slick_2.10/jars/slick_2.10-1.0.1.jar:/home/agro/.ivy2/cache/mysql/mysql-connector-java/jars/mysql-connector-java-5.1.25.jar:/home/agro/.ivy2/cache/net.liftweb/lift-json_2.10/jars/lift-json_2.10-2.5.1.jar:/home/agro/.ivy2/cache/org.scala-lang/scalap/jars/scalap-2.10.0.jar:/home/agro/.ivy2/cache/org.scala-lang/scala-compiler/jars/scala-compiler-2.10.0.jar:/home/agro/.ivy2/cache/org.scala-lang/scala-reflect/jars/scala-reflect-2.10.0.jar:/home/agro/.ivy2/cache/com.thoughtworks.paranamer/paranamer/jars/paranamer-2.4.1.jar:/home/agro/.ivy2/cache/ch.qos.logback/logback-classic/jars/logback-classic-1.0.13.jar:/home/agro/.ivy2/cache/ch.qos.logback/logback-core/jars/logback-core-1.0.13.jar:/home/agro/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.5.jar[0m
+[0m[[0mdebug[0m] [0mScala compilation took 8.320890342 s[0m
+[0m[[0mdebug[0m] [0mInvalidated by transitive public inheritance: Set()[0m
+[0m[[0mdebug[0m] [0mInvalidated by direct dependency: Set()[0m
+[0m[[0mdebug[0m] [0mNew invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
+[0m[[0mdebug[0m] [0mPreviously invalidated, but (transitively) depend on new invalidations:[0m
+[0m[[0mdebug[0m] [0m	Set()[0m
