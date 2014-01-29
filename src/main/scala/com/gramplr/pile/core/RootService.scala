@@ -15,13 +15,21 @@ class RootService extends Actor with Database with Config {
   def receive = {
     case _: Http.Connected => sender ! Http.Register(self)
     case HttpRequest(GET, Uri.Path("/"), _, _, _) =>
-      sender ! HttpResponse(entity = "welcome to the pile service")
+      sender ! HttpResponse(entity = "Welcome to the Pile service!")
     case r@HttpRequest(GET, Uri.Path("/shorten"), _, _, _) => {
-      val s = r.uri.query.getOrElse("url", "")
-      val key = Keygen.generate
+      for(p <- r.headers) {
+        if(p.name == "Remote-Address") {
+          if(p.value == "127.0.0.1") {
+            val s = r.uri.query.getOrElse("url", "")
+            val key = Keygen.generate
 
-      insertShorten(key, s)
-      sender ! HttpResponse(entity = baseurl + "/" + key)
+            insertShorten(key, s)
+            sender ! HttpResponse(entity = baseurl + "/" + key)
+          } else {
+            sender ! HttpResponse(entity = "You don't have permission to do that.")
+          }
+        }
+      }
     }
     case HttpRequest(GET, Uri.Path(path), _, _, _) => {
       val url = getURL(path.substring(1))
