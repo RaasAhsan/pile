@@ -18,8 +18,7 @@ class RootService extends Actor with Database with Config {
       sender ! HttpResponse(entity = "Welcome to the Pile service!")
     case r@HttpRequest(GET, Uri.Path("/shorten"), _, _, _) => {
       for(p <- r.headers) {
-        println(p.name + " " + p.value)
-        if(p.name == "Remote-Address") {
+        if(p.name == "X-Real-IP") {
           if(p.value == "127.0.0.1") {
             val s = r.uri.query.getOrElse("url", "")
             val key = Keygen.generate
