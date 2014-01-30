@@ -9,6 +9,7 @@ trait Database extends Config with Core {
   lazy val dbconn = DriverManager.getConnection(getString("db"), getString("user"), getString("password"))
   lazy val table = "url-shorten"
 
+  lazy val getVersion = dbconn.prepareStatement("SELECT version();")
   lazy val insert = dbconn.prepareStatement("INSERT INTO `" + table + "` VALUES (?, ?)")
   lazy val retrieve = dbconn.prepareStatement("SELECT * FROM `" + table + "` WHERE `key`=?")
 
@@ -25,6 +26,10 @@ trait Database extends Config with Core {
       rs.getString("value")
     else
       "shorten.gramplr.com"
+  }
+
+  def version {
+    getVersion.executeQuery()
   }
 
 }

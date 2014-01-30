@@ -8,4 +8,6 @@ trait Config { this: Core =>
 
   def getString(k: String) = config.getString(k)
 
+  def getInt(k: String) = config.getInt(k)
+
 }
