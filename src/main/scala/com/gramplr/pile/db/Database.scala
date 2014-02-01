@@ -25,7 +25,7 @@ trait Database extends Config with Core {
     if(rs.next())
       rs.getString("value")
     else
-      "shorten.gramplr.com"
+      "notfound"
   }
 
   def version {

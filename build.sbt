@@ -14,8 +14,8 @@ libraryDependencies ++= Seq(
     "com.typesafe.akka" %% "akka-slf4j" % "2.2.3",
     "com.typesafe.slick" %% "slick" % "1.0.1",
     "mysql" % "mysql-connector-java" % "5.1.25",
-    "net.liftweb" %% "lift-json" % "2.5.1",
-    "ch.qos.logback" % "logback-classic" % "1.0.13"
+    "ch.qos.logback" % "logback-classic" % "1.0.13",
+    "com.typesafe.play" % "play-json_2.10" % "2.2.0-RC1"
 )
 
 resolvers ++= Seq(

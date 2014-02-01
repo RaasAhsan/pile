@@ -16,6 +16,6 @@ object Pile extends App with Core with Config {
   IO(Http) ! Http.Bind(system.actorOf(Props[RootService], name = "rootService"), host, port)
 
   val timeoutActor = system.actorOf(Props[KeepAliveService], name = "keepAliveService")
-  system.scheduler.schedule(0 seconds, 5 minutes, timeoutActor, KeepAlive)
+  system.scheduler.schedule(0 seconds, 1 minutes, timeoutActor, KeepAlive)
 
 }
