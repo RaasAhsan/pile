@@ -12,11 +12,23 @@ trait Database extends Config with Core {
   lazy val getVersion = dbconn.prepareStatement("SELECT version();")
   lazy val insert = dbconn.prepareStatement("INSERT INTO `" + table + "` VALUES (?, ?)")
   lazy val retrieve = dbconn.prepareStatement("SELECT * FROM `" + table + "` WHERE `key`=?")
+  lazy val getKey = dbconn.prepareStatement("SELECT * FROM `" + table + "` WHERE `value`=?")
 
   def insertShorten(key: String, value: String) {
-    insert.setString(1, key)
-    insert.setString(2, value)
-    insert.executeUpdate()
+    if(getKey(value) == "notfound") {
+      insert.setString(1, key)
+      insert.setString(2, value)
+      insert.executeUpdate()
+    }
+  }
+
+  def getKey(value: String): String = {
+    retrieve.setString(1, value)
+    val rs = retrieve.executeQuery()
+    if(rs.next())
+      rs.getString("key")
+    else
+      "notfound"
   }
 
   def getURL(key: String): String = {
