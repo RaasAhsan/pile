@@ -6,7 +6,7 @@ import com.gramplr.pile.utils.webservices.HttpHeader
 
 object HttpResponseParser extends RegexParsers {
 
-  override def skipWhitespace = true
+  override def skipWhitespace = false
 
   def spaces = """[ ]+""".r
 

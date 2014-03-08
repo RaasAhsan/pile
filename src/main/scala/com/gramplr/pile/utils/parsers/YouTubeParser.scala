@@ -5,14 +5,23 @@ import com.gramplr.pile.utils.webservices.YouTubeVideo
 
 object YouTubeParser extends RegexParsers {
 
-  def scheme: Parser[String] = "http" | "https"
+  def scheme: Parser[String] = ("http://" | "https://")
 
-  def videoID: Parser[String] = "[a-z\\d\\-]+".r
+  def youtubeLink: Parser[String] = ("youtube.com/watch/?v=" | "www.youtube.com/watch/?v=" | "youtube.com/watch?v=" | "www.youtube.com/watch?v=")
 
-  def youTubeParser: Parser[YouTubeVideo] = scheme ~ "://youtube.com/watch/?v=" ~ videoID ^^
+  def videoID: Parser[String] = ".+".r
+
+  def youTubeParser: Parser[YouTubeVideo] = scheme ~ youtubeLink ~ videoID ^^
   {
-    case(httpType ~ _ ~ vID) => {
+    case(scheme ~ youtubeLink ~ vID) => {
       YouTubeVideo(vID)
+    }
+  }
+
+  def apply(input: String): Option[YouTubeVideo] = {
+    parse(youTubeParser, input) match {
+      case Success(out, next) => Some(out)
+      case NoSuccess(error, _) => None
     }
   }
 

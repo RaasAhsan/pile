@@ -22,3 +22,5 @@ resolvers ++= Seq(
     "Spray repository" at "http://repo.spray.io",
     "Typesafe repository" at "http://repo.typesafe.com/typesafe/releases/"
 )
+
+seq(Revolver.settings: _*)

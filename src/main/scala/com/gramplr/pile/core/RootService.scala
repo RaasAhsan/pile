@@ -5,7 +5,7 @@ import spray.http._
 import HttpMethods._
 import spray.can.Http
 import com.gramplr.pile.db.Database
-import com.gramplr.pile.utils.{URLReader, Keygen}
+import com.gramplr.pile.utils.{URLReader}
 import spray.http.HttpHeaders.Location
 import play.api.libs.json.Json
 
@@ -19,11 +19,19 @@ class RootService extends Actor with Database with Config {
       sender ! HttpResponse(entity = "Welcome to the Pile service!")
     case r@HttpRequest(GET, Uri.Path("/shorten"), _, _, _) => {
       val map = URLReader.getURLs(r.uri.query.getOrElse("url", ""))
-      map.foreach(x => insertShorten(x._2, x._1))
+      map.foreach(x => {
+        insertShorten(x._2, x._1, URLReader.getType(x._1))
+      })
 
       val back = Json.obj("urls" -> Json.toJson(map.map(x => baseurl + "/" + x._2)))
 
       sender ! HttpResponse(entity = Json.stringify(back))
+    }
+    case r@HttpRequest(GET, Uri.Path("/image"), _, _, _) => {
+      sender ! HttpResponse(entity = URLReader.isImage(r.uri.query.getOrElse("url", "")) + "")
+    }
+    case r@HttpRequest(GET, Uri.Path("/youtube"), _, _, _) => {
+      sender ! HttpResponse(entity = URLReader.isYoutubeVideo("https://www.youtube.com/watch?v=" + r.uri.query.getOrElse("url", "")) + "")
     }
     case HttpRequest(GET, Uri.Path("/notfound"), _, _, _) => {
       sender ! HttpResponse(entity = "Not found.")
