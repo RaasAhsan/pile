@@ -73,10 +73,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RootService.scala" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RootService.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="131" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.42654866" vertical-offset="227" max-vertical-offset="864">
+            <state line="30" column="45" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
               <folding />
             </state>
           </provider>
@@ -109,10 +109,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LinkParser.scala" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="LinkParser.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="36" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
+            <state line="14" column="29" selection-start="419" selection-end="419" vertical-scroll-proportion="0.40484428" vertical-offset="0" max-vertical-offset="578">
               <folding />
             </state>
           </provider>
@@ -168,12 +168,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/webservices/YouTubeVideo.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/webservices/HttpResponse.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/webservices/Link.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/HttpResponseParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/URLReader.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/YouTubeParser.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala" />
       </list>
     </option>
   </component>
@@ -918,13 +918,6 @@
         <state line="5" column="42" selection-start="257" selection-end="257" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="954">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/HttpResponseParser.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="52" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1062">
@@ -932,16 +925,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala">
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="36" selection-start="265" selection-end="265" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/YouTubeParser.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="3" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+        <state line="9" column="32" selection-start="323" selection-end="323" vertical-scroll-proportion="0.0" vertical-offset="18" max-vertical-offset="954">
           <folding />
         </state>
       </provider>
@@ -955,7 +941,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="131" selection-start="1297" selection-end="1297" vertical-scroll-proportion="0.42654866" vertical-offset="227" max-vertical-offset="864">
+        <state line="30" column="45" selection-start="1046" selection-end="1046" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="864">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/YouTubeParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="3" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="419" selection-end="419" vertical-scroll-proportion="0.40484428" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>

@@ -5,14 +5,14 @@ import com.gramplr.pile.utils.webservices.Link
 
 object LinkParser extends RegexParsers {
 
-  def scheme: Parser[String] = "http" | "https"
+  def scheme: Parser[String] = ("http://" | "https://")
 
   def base: Parser[String] = "[a-z.-]+".r
 
   def uri: Parser[String] = ".+".r
 
-  def linkParser: Parser[Link] = scheme ~ "://" ~ base ~ opt("/") ~ opt(uri) ^^ {
-    case (s ~ _ ~ b ~ _ ~ u) => {
+  def linkParser: Parser[Link] = scheme ~ base ~ opt("/") ~ opt(uri) ^^ {
+    case (s ~ b ~ _ ~ u) => {
       Link(b, u.getOrElse(""))
     }
   }
