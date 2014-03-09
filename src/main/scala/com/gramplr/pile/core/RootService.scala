@@ -39,10 +39,15 @@ class RootService extends Actor with Database with Config {
     case HttpRequest(GET, Uri.Path(path), _, _, _) => {
       val url = getURL(path.substring(1))
 
-      sender ! HttpResponse(
-        status = StatusCodes.TemporaryRedirect,
-        headers = Location(url) :: Nil
-      )
+      if(url != "notfound") {
+        click(path.substring(1))
+        sender ! HttpResponse(
+          status = StatusCodes.TemporaryRedirect,
+          headers = Location(url) :: Nil
+        )
+      } else {
+        sender ! HttpResponse(entity = "Not found.")
+      }
     }
   }
 

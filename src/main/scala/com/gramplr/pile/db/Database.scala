@@ -10,15 +10,17 @@ trait Database extends Config with Core {
   lazy val table = "url-shorten"
 
   lazy val getVersion = dbconn.prepareStatement("SELECT version();")
-  lazy val insert = dbconn.prepareStatement("INSERT INTO `" + table + "` VALUES (?, ?, ?)")
+  lazy val insert = dbconn.prepareStatement("INSERT INTO `" + table + "` VALUES (?, ?, ?, ?)")
   lazy val retrieve = dbconn.prepareStatement("SELECT * FROM `" + table + "` WHERE `key`=?")
   lazy val getKey = dbconn.prepareStatement("SELECT * FROM `" + table + "` WHERE `value`=?")
+  lazy val increaseClick = dbconn.prepareStatement("UPDATE `" + table + "` SET `clicks`=`clicks`+1 WHERE `key`=?")
 
   def insertShorten(key: String, value: String, linkType: Int) {
     if(getKey(value) == "notfound") {
       insert.setString(1, key)
       insert.setString(2, value)
       insert.setInt(3, linkType)
+      insert.setInt(4, 0)
       insert.executeUpdate()
     }
   }
@@ -39,6 +41,13 @@ trait Database extends Config with Core {
       rs.getString("value")
     else
       "notfound"
+  }
+
+  def click(key: String) {
+    if(getKey(key) != "notfound") {
+      increaseClick.setString(1, key)
+      increaseClick.executeUpdate()
+    }
   }
 
   def version {
