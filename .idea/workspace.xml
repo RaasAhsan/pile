@@ -67,7 +67,7 @@
       <file leaf-file-name="RootService.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="49" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.7972743" vertical-offset="270" max-vertical-offset="954">
+            <state line="23" column="36" selection-start="814" selection-end="814" vertical-scroll-proportion="-0.21465077" vertical-offset="414" max-vertical-offset="1098">
               <folding />
             </state>
           </provider>
@@ -76,7 +76,7 @@
       <file leaf-file-name="URLReader.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/URLReader.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="110" column="1" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.0" vertical-offset="1296" max-vertical-offset="1998">
+            <state line="110" column="1" selection-start="2781" selection-end="2781" vertical-scroll-proportion="0.0" vertical-offset="1980" max-vertical-offset="2106">
               <folding />
             </state>
           </provider>
@@ -85,7 +85,7 @@
       <file leaf-file-name="Database.scala" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/db/Database.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="5" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="516" max-vertical-offset="1116">
+            <state line="49" column="5" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="882" max-vertical-offset="1134">
               <folding />
             </state>
           </provider>
@@ -180,6 +180,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,8 +310,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -550,7 +550,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="743" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -569,7 +569,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -893,23 +893,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/HttpResponseParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="52" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1062">
-          <folding />
-        </state>
+        <state line="4" column="52" selection-start="186" selection-end="186" vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="1062" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/LinkParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576">
-          <folding />
-        </state>
+        <state line="27" column="0" selection-start="644" selection-end="644" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="576" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/parsers/YouTubeParser.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="9" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="594">
-          <folding />
-        </state>
+        <state line="7" column="9" selection-start="200" selection-end="200" vertical-scroll-proportion="0.0" vertical-offset="29" max-vertical-offset="594" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/utils/URLReader.scala">
@@ -928,7 +922,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="49" selection-start="1789" selection-end="1789" vertical-scroll-proportion="0.7972743" vertical-offset="270" max-vertical-offset="954">
+        <state line="23" column="36" selection-start="814" selection-end="814" vertical-scroll-proportion="-0.21465077" vertical-offset="414" max-vertical-offset="1098">
           <folding />
         </state>
       </provider>

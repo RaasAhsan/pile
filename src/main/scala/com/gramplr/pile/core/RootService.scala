@@ -7,7 +7,7 @@ import spray.can.Http
 import com.gramplr.pile.db.Database
 import com.gramplr.pile.utils.{URLReader}
 import spray.http.HttpHeaders.Location
-import play.api.libs.json.Json
+import play.api.libs.json.{JsString, Json}
 
 class RootService extends Actor with Database with Config {
 
@@ -19,11 +19,19 @@ class RootService extends Actor with Database with Config {
       sender ! HttpResponse(entity = "Welcome to the Pile service!")
     case r@HttpRequest(GET, Uri.Path("/shorten"), _, _, _) => {
       val map = URLReader.getURLs(r.uri.query.getOrElse("url", ""))
-      map.foreach(x => {
-        insertShorten(x._2, x._1, URLReader.getType(x._1))
+      val nmap = map.map(x => {
+        val t = URLReader.getType(x._1)
+        insertShorten(x._2, x._1, t)
+        (x._1, x._2, t)
       })
 
-      val back = Json.obj("urls" -> Json.toJson(map.map(x => baseurl + "/" + x._2)))
+      val back = Json.obj(
+        "urls" -> Json.toJson(
+          nmap.map(x => Json.obj("link" -> (baseurl + "/" + x._2), "type" -> x._3))
+        )
+      )
+
+      println(Json.stringify(back))
 
       sender ! HttpResponse(entity = Json.stringify(back))
     }
