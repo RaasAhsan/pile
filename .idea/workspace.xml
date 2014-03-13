@@ -67,7 +67,7 @@
       <file leaf-file-name="RootService.scala" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="9" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.092307694" vertical-offset="540" max-vertical-offset="1206">
+            <state line="28" column="7" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.35384616" vertical-offset="171" max-vertical-offset="1242">
               <folding />
             </state>
           </provider>
@@ -922,7 +922,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/com/gramplr/pile/core/RootService.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="9" selection-start="1368" selection-end="1368" vertical-scroll-proportion="0.092307694" vertical-offset="540" max-vertical-offset="1206">
+        <state line="28" column="7" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.35384616" vertical-offset="171" max-vertical-offset="1242">
           <folding />
         </state>
       </provider>
