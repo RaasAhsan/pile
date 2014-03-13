@@ -18,22 +18,28 @@ class RootService extends Actor with Database with Config {
     case HttpRequest(GET, Uri.Path("/"), _, _, _) =>
       sender ! HttpResponse(entity = "Welcome to the Pile service!")
     case r@HttpRequest(GET, Uri.Path("/shorten"), _, _, _) => {
-      val map = URLReader.getURLs(r.uri.query.getOrElse("url", ""))
-      val nmap = map.map(x => {
-        val t = URLReader.getType(x._1)
-        insertShorten(x._2, x._1, t)
-        (x._1, x._2, t)
-      })
+      for(p <- r.headers) {
+        if(p.name == "X-Real-IP") {
+          if(p.value == "127.0.0.1") {
+            val map = URLReader.getURLs(r.uri.query.getOrElse("url", ""))
+            val nmap = map.map(x => {
+              val t = URLReader.getType(x._1)
+              insertShorten(x._2, x._1, t)
+              (x._1, x._2, t)
+            })
 
-      val back = Json.obj(
-        "urls" -> Json.toJson(
-          nmap.map(x => Json.obj("link" -> (baseurl + "/" + x._2), "type" -> x._3))
-        )
-      )
+            val back = Json.obj(
+              "urls" -> Json.toJson(
+                nmap.map(x => Json.obj("link" -> (baseurl + "/" + x._2), "type" -> x._3))
+              )
+            )
 
-      println(Json.stringify(back))
-
-      sender ! HttpResponse(entity = Json.stringify(back))
+            sender ! HttpResponse(entity = Json.stringify(back))
+          } else {
+            sender ! HttpResponse(entity = "You don't have permission to do that.")
+          }
+        }
+      }
     }
     case r@HttpRequest(GET, Uri.Path("/image"), _, _, _) => {
       sender ! HttpResponse(entity = URLReader.isImage(r.uri.query.getOrElse("url", "")) + "")
